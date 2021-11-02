@@ -1,0 +1,85 @@
+<!--Una pagina web donde se listen los servidores web y los servidores de aplicaciones, dependiendo del sistema operativo y del lenguaje de programacion.-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reto2</title>
+</head>
+<body style="font-family:Arial, Helvetica, sans-serif">
+    <header>
+        <table border="3" style="text-align: center;" width="1000" height="25">
+            <tr>
+                <td><a href="../Usco/Reto6.html"> Inicio </a></td>
+                <td><a href="../Usco/Reto1.html"> Arquitectura Cliente-Servidor</a></td>
+                <td><a href="../Usco/Reto2.html"> Servidor Web</a></td>
+                <td><a href="../Usco/Reto3.html"> HTML - CSS - JS</a></td>
+                <td><a href="../Usco/Reto4.html"> Reproductores Multimedia</a></td>
+                <td><a href="../Usco/Reto5.html"> Calculadora</a></td>
+            </tr>
+        </table>
+    </header>
+    <main style="text-align: justify;">
+        <section>
+            <h1 style="text-align: center;">Qué es un servidor web: funcionamiento y tipos</h1>
+            <article>
+                <h2>Qué es un servidor web</h2>
+                <p>En primer lugar, conviene establecer un punto de partida definiendo el propio <strong> de servidor </strong>. En su acepción más simplista, un servidor no es más que un ordenador, dotado de un hardware y un software, que está al servicio de otros dispositivos o personas a los que suministra información. Los destinatarios de esa información se denominan clientes.
+
+                Profundizando en esta definición, <strong> diferenciar entre los Servidores Hardware y los Servidores Software:</strong></p>
+                <ol>
+                    <li>Servidor Hardware o host: es la máquina física integrada en una red informática que ejecuta el sistema operativo y uno o varios servidores basados en software.</li>
+                    <li>Servidor Software: es un programa que está al servicio de otros programas o clientes, sea nivel local o a través de una red. El tipo de servicio dependerá del software instalado.</li>
+                </ol>
+                <p>Es fundamental tener clara esta distinción, ya que <strong> base de toda comunicación es el modelo de arquitectura cliente-servidor.</strong> De acuerdo a este modelo, el cliente realiza peticiones al servidor, que es el que le da una respuesta, abasteciéndolo de los recursos que necesita. La propia World Wide Web o las plataformas de comercio electrónico son ejemplos cercanos de este modelo.</p>
+
+                <p style="text-align: center;"> <img src="https://www.cloudcenterandalucia.es/wp-content/uploads/2021/05/web-server.svg" alt="" width="700" height="450"> </p>
+
+                <p>¿Qué es entonces un servidor web? Son un tipo de servidores utilizados para la distribución y entrega de contenido web en redes internas o Internet. También conocidos como servidores HTTP, son los <strong> de despachar todos los archivos de una página o aplicación web</strong>  (textos, imágenes, vídeos, etc.) y mostrarlos a los usuarios a través de su navegador.
+
+                Aclaremos estas diferencias con un ejemplo. Si quisiéramos consultar la clasificación de la última carrera de Fórmula 1, accederemos mediante un navegador web a la edición digital de nuestro diario deportivo favorito. Al escribir esta búsqueda, el navegador envía una solicitud al servidor web, que responde entregando una página HTML. La página en la que vemos si nuestro piloto favorito hizo un buen papel el último fin de semana. Parece fácil, ¿verdad?. Realmente no es tan simple.
+                    
+                Este proceso de despacho, a priori sencillo, es mucho más complejo.<strong> Las operaciones que se ejecutan entre host y cliente pasan totalmente desapercibidas para el usuario final.</strong> Por eso en el siguiente apartado vamos a explicar cómo funciona un servidor web.</p>
+            </article>
+
+            <article>
+                <h2>Cómo funciona un servidor web</h2>
+                <p>La comunicación entre el servidor y el cliente se basa en HTTP, abreviatura de HyperText Transfer Protocol. Éste es el protocolo de comunicación que permite operar transferencias de información o archivos en internet. Su variante codificada, el HTTPS, salvaguarda la confidencialidad de los datos de usuarios en esos intercambios. Cuando visitamos una página web, podemos ver estas identificaciones en la barra en la que aparece la URL del sitio.</p>
+                <p>La clave de todo el proceso radica en la propia petición. Existen muchos tipos de peticiones, aunque las más comunes son las de tipo GET y POST. Las peticiones GET, solicitan al servidor algún tipo de información (página HTML, fichero XML, fotos, vídeos, etc.). Las peticiones POST, envían datos al servidor, como por ejemplo cuando rellenamos un formulario en un ecommerce.
+
+                Cuando el servidor recibe una petición, se inicia un proceso que podemos separar en cuatro pasos:</p>
+                <ul>
+                    <li><strong>1. Resolución DNS</strong>: para abrir cualquier página web debemos conocer su IP (código numérico que identifica al servidor). Para obtenerla, se ejecuta una consulta a un servidor DNS, con acceso a la agenda completa de direcciones en internet.</li>
+                    <li><strong>2. Resolución DNS a IP</strong>: una vez que el sistema operativo ha resuelto esa consulta DNS, utiliza el protocolo TCP/IP para comunicar con el servidor remoto que almacena la página que pretendemos cargar.</li>
+                    <li><strong>3. Preparación de la petición</strong>: en esta fase el servidor web identifica a qué sitio corresponde la petición recibida, observando su URL. A partir de ella levanta la configuración personalizada de esa página web, detectando los elementos que debe enviar y definiendo la prioridad de la petición.</li>
+                    <li><strong>4. Presentación</strong>: finalmente, el servidor web devuelve al navegador una respuesta que identifica el tipo de datos enviados, facilitando así su funcionamiento y mostrando en pantalla la información que hemos solicitado.</li>
+                </ul>
+            </article>
+            <article>
+                <h2><strong>Tipos de servidores web</strong></h2>
+                <p>Existen multitud de servidores web, cada uno con sus propias características, por lo que solamente vamos a enumerar los más destacados:</p>
+                <h3>Apache</h3>
+                <p>Es el servidor web de referencia, <strong>el más popular y extendido</strong>. Lleva 25 años siendo el líder indiscutible, a pesar de que nuevos competidores le hayan robado cuota de mercado. Su principal ventaja es que es gratuito y de código abierto, por lo que se puede instalar en casi todos los sistemas operativos. Su desfasada arquitectura frente a otros tipos de servidor es su principal punto débil.</p>
+                <h3>Nginx</h3>
+                <p>También open source y gratuito (aunque ofrece una versión comercial), destaca por su <strong>alto rendimiento</strong>. Utiliza un proxy inverso, que protege la identidad de los servidores y mejora la seguridad de la información que acogen. Su configuración es sencilla, pero también muy personalizable, consumiendo pocos recursos. Su defecto: no se puede integrar con PHP de forma nativa.</p>
+                <h3>Microsoft IIS</h3>
+                <p>Es un servidor web de Microsoft, <strong>creado específicamente para</strong> su sistema operativo <strong>Windows</strong>. De ahí su principal ventaja: es 100% compatible con todas las tecnologías de la multinacional estadounidense. A su vez, supone su mayor inconveniente: la integración de lenguajes y tecnologías es limitada con respecto a otras opciones.</p>
+                <h3>Google GWS</h3>
+                <p>Se trata de un servidor de uso exclusivo por parte de Google, lo que implica que no puede ser utilizado por particulares o empresas. ¿Por qué lo incluimos entonces en este listado? Porque es <strong>uno de los más utilizados hoy en día</strong> (aunque como usuarios no lo sepamos). Es el encargado de sostener toda la infraestructura del gigante de internet, por lo que proporciona servicio simultáneo a millones de usuarios.</p>
+                <h3>Lite Speed</h3>
+                <p>Un servidor web muy <strong>robusto y eficiente</strong>. Su capacidad para soportar grandes cargas de trabajo es su punto fuerte frente a otras alternativas. Su arquitectura, basada en un sistema de eventos, evita la duplicidad de procesos que sí se genera en otros servidores. El principal inconveniente es que siendo un software propietario, obliga a pasar por caja para adquirir la licencia de uso.</p>
+                <h3>Lighttpd</h3>
+                <p>Fue una de las primeras alternativas a Apache, solventando sus problemas de gestión de grandes cargas de trabajo. Por ello, su diseño busca ante todo la <strong>rapidez operativa</strong>, algo que consigue consumiendo pocos recursos. Esto lo convierte en una opción idónea para servidores VPS de bajos recursos. Sin embargo, carece de versión oficial para sistemas operativos Windows, lo que limita su aplicación.</p>
+                <h3>Sun Java System Web Server</h3>
+                <p>Creado para gestionar grandes cargas de trabajo con tecnologías específicas como Java, Phyton o Ruby on Rails. Por este motivo, su uso se ciñe a entornos corporativos, estando especialmente pensado como <strong>herramienta de utilidad para programadores</strong>.</p>
+            </article>
+
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+    
+</body>
+</html>

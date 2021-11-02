@@ -1,0 +1,49 @@
+<!--Una pagina web que incluya un reproductor de audio y otro de video de archivos locales (que estan guardados en el computador, no en lınea - cloud). Se debe descargar el video de youtube y guardarlo en su computador (dos formatos de archivo). Debe obtener el audio del mismo video (dos formatos de archivo). Puede utilizar convertidores de audio y video de escritorio(aplicaciones) o en lınea.-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reto 4</title>
+</head>
+<body style="font-family: Arial, Helvetica, sans-serif;">
+    <header>
+        <table border="3" style="text-align: center;" width="1000" height="25">
+            <tr>
+                <td><a href="../Usco/Reto6.html"> Inicio </a></td>
+                <td><a href="../Usco/Reto1.html"> Arquitectura Cliente-Servidor</a></td>
+                <td><a href="../Usco/Reto2.html"> Servidor Web</a></td>
+                <td><a href="../Usco/Reto3.html"> HTML - CSS - JS</a></td>
+                <td><a href="../Usco/Reto4.html"> Reproductores Multimedia</a></td>
+                <td><a href="../Usco/Reto5.html"> Calculadora</a></td>
+            </tr>
+        </table>
+    </header>
+    <main>
+        <h1 style="text-align: center;">Reproductores Multimedia</h1>
+        <table border="4" style="text-align: center;">
+            <tr>
+				<td> MP3:  <br>
+                    <audio src="Multimedia/BlueSong1.mp3" type="audio/mp3" controls></audio>
+                </td>
+				<td> OGG: <br>
+                    <audio src="Multimedia/BlueSong2.ogg" type="audio/ogg" controls></audio>
+                </td>	
+			</tr>
+            <tr>
+                <td> MP4: 
+                    <video width= " 640 " height= " 360 " controls>
+                    <source src= "Multimedia/Blue1.mp4"type= "video/mp4">
+                    </video> 
+                </td>
+                <td> WEBM: : 
+                    <video width= " 640 " height= " 360 " controls>
+                    <source src= "Multimedia/Blue2.webm"type= "video/webm">
+                    </video> 
+                </td>
+            </tr>
+        </table>
+    </main>
+</body>
+</html>
